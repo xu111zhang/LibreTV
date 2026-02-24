@@ -21,58 +21,79 @@ const SITE_CONFIG = {
 };
 
 // API站点配置
+/*const API_SITES = {
+    testSource: {
+        api: 'https://www.example.com/api.php/provide/vod',
+        name: '空内容测试源',
+        adult: true
+    }
+    //ARCHIVE https://telegra.ph/APIs-08-12
+};*/
 const CUSTOMER_SITES = {
     qiqi: {
-    api: 'https://www.qiqidys.com/api.php/provide/vod',
-    name: '七七资源',
+        api: 'https://www.qiqidys.com/api.php/provide/vod',
+        name: '七七资源',
+        adult: false
     },
     hongniu: {
-    api: 'http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8',
-    name: '紅牛資源',
+        api: 'http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8',
+        name: '紅牛資源',
+        adult: false
     },
     liangzi: {
-    api: 'http://cj.lziapi.com/api.php/provide/vod/from/lzm3u8',
-    name: '量子資源',
+        api: 'http://cj.lziapi.com/api.php/provide/vod/from/lzm3u8',
+        name: '量子資源',
+        adult: false
     },
     kaifang: {
-    api: 'http://vod-demo.onrender.com/pubdovod.php',
-    name: '開放電影',
+        api: 'http://vod-demo.onrender.com/pubdovod.php',
+        name: '開放電影',
+        adult: false
     },
     youzhi: {
-    api: 'http://api.1080zyku.com/inc/api.php/provide/vod',
-    name: '优质资源库',
+        api: 'http://api.1080zyku.com/inc/api.php/provide/vod',
+        name: '优质资源库',
+        adult: false
     },
     sanshijiu: {
-    api: 'http://39kan.com/api.php/provide/vod',
-    name: '39影視',
+        api: 'http://39kan.com/api.php/provide/vod',
+        name: '39影視',
+        adult: false
     },
     tiantang: {
-    api: 'http://vipmv.cc/api.php/provide/vod',
-    name: '天堂资源',
+        api: 'http://vipmv.cc/api.php/provide/vod',
+        name: '天堂资源',
+        adult: false
     },
     lehuo: {
-    api: 'http://lehootv.com/api.php/provide/vod',
-    name: '乐活影视',
+        api: 'http://lehootv.com/api.php/provide/vod',
+        name: '乐活影视',
+        adult: false
     },
     tangrenjie1: {
-    api: 'http://tangrenjie.tv/api.php/provide/vod',
-    name: '唐人街',
+        api: 'http://tangrenjie.tv/api.php/provide/vod',
+        name: '唐人街',
+        adult: false
     },
     kudian1: {
-    api: 'http://api.kuapi.cc/api.php/provide/vod',
-    name: '酷点资源',
+        api: 'http://api.kuapi.cc/api.php/provide/vod',
+        name: '酷点资源',
+        adult: false
     },
     wolong1: {
-    api: 'http://collect.wolongzyw.com/api.php/provide/vod',
-    name: '卧龙资源',
+        api: 'http://collect.wolongzyw.com/api.php/provide/vod',
+        name: '卧龙资源',
+        adult: false
     },
     kudian2: {
-    api: 'http://kudian10.com/api.php/provide/vod',
-    name: '酷点资源',
+        api: 'http://kudian10.com/api.php/provide/vod',
+        name: '酷点资源',
+        adult: false
     },
     tangrenjie2: {
-    api: 'http://tangrenjie.tv/api.php/provide/vod/at/xm',
-    name: '唐人街',
+        api: 'http://tangrenjie.tv/api.php/provide/vod/at/xm',
+        name: '唐人街',
+        adult: false
     },
     senlin: {
     api: 'http://slapibf.com/api.php/provide/vod',
@@ -83,24 +104,28 @@ const CUSTOMER_SITES = {
     name: '影库资源网',
     },
     kuache1: {
-    api: 'http://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8',
-    name: '快车资源',
+        api: 'http://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8',
+        name: '快车资源',
+        adult: false
     },
     tantan: {
-    api: 'http://apittzy.com/api.php/provide/vod',
-    name: '探探资源',
+        api: 'http://apittzy.com/api.php/provide/vod',
+        name: '探探资源',
+        adult: false
     },
     shandian1: {
     api: 'http://sdzyapi.com/api.php/provide/vod/from/sdm3u8',
     name: '閃電資源',
     },
     jinying: {
-    api: 'http://jyzyapi.com/provide/vod/from/jinyingm3u8',
-    name: '金鹰资源',
+        api: 'http://jyzyapi.com/provide/vod/from/jinyingm3u8',
+        name: '金鹰资源',
+        adult: false
     },
     guangsu: {
-    api: 'http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8',
-    name: '光速资源',
+        api: 'http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8',
+        name: '光速资源',
+        adult: false
     },
     aosika: {
     api: 'http://aosikazy.com/api.php/provide/vod',
